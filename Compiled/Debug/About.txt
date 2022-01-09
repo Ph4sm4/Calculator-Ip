@@ -1,0 +1,52 @@
+Polish:
+
+Program został stworzony, aby pomóc wykonywać różne operacje na adresie ip oraz masce sieci.
+
+Kalkulator ip ma różne funckje - przycisk My ip uzyska ip lokalnego hosta, w zakładce Proposed masks możesz wybrać spośród wielu podstawowych adresów masek, jeśli tylko chcesz możesz oczywiście wpisać ip oraz maskę samodzielnie.
+
+Jeśli jesteś nowy w tym temacie to poniżej znajdziesz kilka przykładów oraz kryteria z czego powinien się składać prawidłowy adres ip oraz maska. Poniższe kryteria odnoszą się zarówno do ip jak i do maski.
+Prawidłowy adres musi zawierać:
+-4 części 3-cyfrowych liczb
+-każda z części musi być oddzielona od siebie kropkami
+-każda z liczb musi być dodatnia oraz nie może być większa od 255
+-adres nie może zawierać liter ani żadnych znaków specjalnych - dozwolone są tylko cyfry
+-puste pola pomiędzy kropkami są niedozwolone 
+-adres nie może kończyć kropka
+
+Przykładowe pary adresów ip oraz maski:
+ip: 192.168.1.145
+maska: 255.255.255.128
+
+ip: 172.16.34.200
+maska: 255.255.192.0
+
+ip: 10.217.123.7
+maska: 255.248.0.0
+
+
+English:
+
+The program was created to help with different operations using ip and mask address.
+
+Calculator ip has a wide variety of functions - with My ip button you can get your local host ip address,
+in Proposed masks combo box you can choose from many default mask addresses, of course if you want you can easily type in your own ip or mask address.
+
+If you are new to this topic here are some examples and criteria of how ip and mask address
+should look like. The criteria below apply to both - ip and mask address.
+Valid address must contain:
+-4 parts of 3 digit numbers
+-every part is seperated by a dot
+-every number has a positive sign and is not greater than 255
+-address cannot contain letters nor special characters - only digits are allowed
+-empty spaces between the dots are not allowed
+-address cannot end with a dot
+
+Examples of pairs of ip and mask address:
+ip: 192.168.1.145
+mask: 255.255.255.128
+
+ip: 172.16.34.200
+mask: 255.255.192.0
+
+ip: 10.217.123.7
+mask: 255.248.0.0

@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>819</width>
+    <height>593</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>3</y>
+      <width>821</width>
+      <height>1041</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QPushButton" name="calculate">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>450</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Show results</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="maskAddress">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>661</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ipAddress">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>661</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="welcome">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>661</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="settings">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Settings</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="choose_mask">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>260</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quitMain">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>450</y>
+        <width>411</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="about">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>450</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>About</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="credits">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>411</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>About ~ Credits</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="myip">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>10</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>My ip</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clear">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>210</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+border: 1px solid white; 
+color: white;
+ background-color: #202020;
+}
+QPushButton:pressed{
+background-color: gray;
+color: #FFFFFF;
+border: 1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QPlainTextEdit" name="showNet">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>711</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="showBroadcast">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>110</y>
+        <width>711</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="showHostNum">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>180</y>
+        <width>711</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>450</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;- Back</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="showFirstHost">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>250</y>
+        <width>711</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="showLastHost">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>320</y>
+        <width>711</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quitShow">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>450</y>
+        <width>411</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QPlainTextEdit" name="info_settings">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>491</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="back_settings">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>450</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;- Back</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="netBox">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>90</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{
+color: #FFFFFF;
+border: 1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Net address</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="broadcastBox">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>150</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{
+color: #FFFFFF;
+border: 1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Broadcast address</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="numHostBox">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>210</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{
+color: #FFFFFF;
+border: 1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Number of hosts</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="firstHostBox">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>270</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{
+color: #FFFFFF;
+border: 1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>First host</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="lastHostBox">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>330</y>
+        <width>351</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{
+color: #FFFFFF;
+border: 1px solid white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Last host</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>450</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quitSettings">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>450</y>
+        <width>411</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Quit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="selectAll">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>30</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Check All</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="unselectAll">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>100</y>
+        <width>181</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #FFFFFF;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+}
+QPushButton:pressed{
+background-color: gray;
+color: black;
+border-width: 5px;
+border-color: #FFFFFF;
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Uncheck all</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>819</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>ipAddress</tabstop>
+  <tabstop>maskAddress</tabstop>
+  <tabstop>calculate</tabstop>
+  <tabstop>welcome</tabstop>
+  <tabstop>settings</tabstop>
+  <tabstop>choose_mask</tabstop>
+  <tabstop>showNet</tabstop>
+  <tabstop>showBroadcast</tabstop>
+  <tabstop>showHostNum</tabstop>
+  <tabstop>back</tabstop>
+  <tabstop>showFirstHost</tabstop>
+  <tabstop>showLastHost</tabstop>
+  <tabstop>info_settings</tabstop>
+  <tabstop>back_settings</tabstop>
+  <tabstop>netBox</tabstop>
+  <tabstop>broadcastBox</tabstop>
+  <tabstop>numHostBox</tabstop>
+  <tabstop>firstHostBox</tabstop>
+  <tabstop>lastHostBox</tabstop>
+  <tabstop>save</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+Polski:
+Główny Deweloper i twórca Aplikacji: Olaf Dalach/Ph4sm4 (C++ Dev)
+Projektant Ikonki oraz Pomysłodawca Graficznego wyglądu aplikacji: Piotr S.
+Tester Bugów: Jacek M. (Python Dev, twórca aplikacji "FileFinder")
+
+English:
+Main Developer and creator: Olaf Dalach/Ph4sm4 (C++ Dev)
+Icon creator and Graphics Designer: Piotr S.
+Bug Tester: Jacek M. (Python Dev, creator of "FileFinder")
