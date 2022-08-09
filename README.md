@@ -1,5 +1,5 @@
 # Calculator-Ip
-Input an Ip address as well as subnet mask and receuve calculated values
+Input an Ip address as well as subnet mask and receive calculated values
 
 ### Calculations
 - Net address
